@@ -130,3 +130,32 @@ header .footer {
 .mobile-nav-active header .footer{
     left: 0;
 } 
+
+/* SECCION MAIN  */
+
+main{
+  margin-left: 300px;
+  background-color: #ff5080;
+  transition: 0.4s;
+
+}
+@media only screen and(max-width:1050px){
+  main{
+    margin-left: 0;
+  }
+}
+
+/* SECCION INICIO  */
+#inicio{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(imagenes/Fondo1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+  position: relative;
+}
