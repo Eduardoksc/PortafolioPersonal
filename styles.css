@@ -33,13 +33,12 @@ header .profile {
 header .profile img {
   width: 150px;
   border-radius: 50%;
-  border: 8px solid var(--iconBGColor);
+  border: 10px solid var(--iconBGColor);
 }
 header .profile h1 {
   color: var(--themeColor);
   font-weight: 600;
-  padding: 10px;
-}
+  }
 header .profile .social-icons a {
   display: inline-block;
   width: 36px;
@@ -115,7 +114,7 @@ header .footer {
 }
 @media only screen and (max-width: 1050px) {
   header {
-    left: -300px;
+    left: -300px; 
   }
   header .footer {
     left: -300px;
@@ -124,33 +123,31 @@ header .footer {
     display: block;
   }
 }
-.mobile-nav-active header{
-    left: 0;
+.mobile-nav-active header {
+  left: 0;
 }
-.mobile-nav-active header .footer{
-    left: 0;
-} 
+.mobile-nav-active header .footer {
+  left: 0;
+}
 
 /* SECCION MAIN  */
 
-main{
+main {
   margin-left: 300px;
-  background-color: #ff5080;
-  transition: 0.4s;
-
+  background-color:var(--bgColor);
+  transition: 0.3s;
 }
-@media only screen and(max-width:1050px){
-  main{
+@media only screen and (max-width:1050px) {
+  main {
     margin-left: 0;
   }
 }
 
 /* SECCION INICIO  */
-#inicio{
+#inicio {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(imagenes/Fondo1.jpg);
+  background-image: url(imagenes/Fondo1.jpg);
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -158,4 +155,56 @@ main{
   justify-content: center;
   padding: 70px;
   position: relative;
+}
+#inicio::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.516);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#inicio .home-row {
+  z-index: 1;
+}
+
+#inicio .home-row h1 {
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  line-height: 70px;
+}
+#inicio .home-row h1 span {
+  color: var(--themeColor);
+}
+#inicio .home-row p {
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: 500;
+}
+#inicio .home-row p span {
+  border-bottom: 4px solid var(--themeColor);
+}
+
+@media only screen and (max-width: 670px) {
+  #inicio {
+    padding:30px;
+}
+  #inicio .home-row h1{
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height:50px;
+  }
+  #inicio .home-row h1 br{
+    display: none;
+  }
+  #inicio .home-row p{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+
 }
