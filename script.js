@@ -8,10 +8,10 @@ MenuBtn.addEventListener('click',function(e){
 // EFECTO LETRA 
 
 let typed = new Typed(".auto-input",{
-    strings:['FullStack Developer!', 'Diseñador Web!'],
-    typeSpeed: 20,
-    backSpeed: 100,
-    backDelay: 2000,
+    strings:['Front-End Developer!', 'Diseñador Web!', 'Freelancer!'],
+    typeSpeed: 100,
+    backSpeed: 40,
+    backDelay: 1000,
     loop: true,
 })
 
