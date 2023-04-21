@@ -33,9 +33,11 @@ header .profile {
   margin: 10px 0;
 }
 header .profile img {
-  width: 150px;
-  border-radius: 50%;
-  border: 10px solid var(--iconBGColor);
+  width: 200px;
+  background-color: var(--sideBGcolor);
+  
+  /* border-radius: 0%; */
+  /* border: 3px solid var(--themeColor);  */
 }
 header .profile h1 {
   color: var(--themeColor);
@@ -300,4 +302,35 @@ main {
   #sobremi .about-col .img-col img {
     width: 50%;
   }
+  #sobremi .about-col .info-col h2 {
+    font-weight: 600;
+    font-weight: 25px;
+    letter-spacing: 0px;
 }
+#sobremi .about-col .info-col p {
+   font-size: 14px;
+  letter-spacing: 0px;
+  }
+  #sobremi .about-col .info-col .icon-list-col {
+    flex-direction: column;
+    gap: 0px;
+}
+#sobremi .about-col .info-col .icon-list-col .icon-list ul li {
+    margin: 10px 0;
+}
+#sobremi .about-col .info-col .icon-list-col .icon-list ul li strong {
+    font-weight: 500;
+    margin-right: 0px;
+}
+#sobremi .about-col .info-col .icon-list-col .icon-list ul li span {
+  font-weight: 400;
+  font-size: 13px;
+}
+}
+@media only screen and (max-width: 400px){
+  #sobremi .about-col .img-col img {
+    width: 90%;
+  }
+
+}
+
