@@ -14,7 +14,7 @@
   --textColor: #525252;
   --bgColor: #f7f7f7;
 }
-/* INICIO ESTILOS DEL HEADER  */
+/* ---------------------------------INICIO ESTILOS DEL HEADER -----------------------------  */
 header {
   height: 100vh;
   width: 300px;
@@ -133,9 +133,9 @@ header .footer {
 .mobile-nav-active header .footer {
   left: 0;
 }
-/* FIN ESTILOS DEL HEADER */
+/* ------------------------------------- FIN ESTILOS DEL HEADER -------------------------*/
 
-/* SECCION MAIN  */
+/* ------------------------------------INICIO ESTILOS MAIN ------------------------------ */
 
 main {
   margin-left: 300px;
@@ -147,8 +147,9 @@ main {
     margin-left: 0;
   }
 }
+/* ---------------------------------------FIN ESTILOS MAIN--------------------------------  */
 
-/* ESTILOS SECCION INICIO  */
+/* --------------------------------------ESTILOS SECCION INICIO  -------------------------- */
 #inicio {
   height: 100vh;
   width: 100%;
@@ -173,7 +174,6 @@ main {
 #inicio .home-row {
   z-index: 1;
 }
-
 #inicio .home-row h1 {
   font-size: 60px;
   color: white;
@@ -211,12 +211,11 @@ main {
     font-weight: 400;
   }
 }
-/* FIN ESTILOS SECCION INICIO */
+/* ---------------------------------FIN ESTILOS SECCION INICIO ---------------------------- */
 
-/*INICIO ESTILOS SECCIÓN SOBRE MI  */
-
+/* ------------------------------INICIO ESTILOS SECCIÓN SOBRE MI -------------------------- */
 #sobremi {
-  padding: 70px;
+  padding: 70px 30px;
 }
 .sub-heading {
   color: black;
@@ -229,7 +228,6 @@ main {
   background-color: var(--themeColor);
   border-radius: 3px;
 }
-
 #sobremi .divider ~ p {
   color: var(--textColor);
   font-size: 15px;
@@ -332,9 +330,9 @@ main {
     width: 90%;
   }
 }
+/* --------------------------------------- FIN ESTILOS SECCION SOBREMI---------------- */
 
-/*  SECCION SKILL */
-
+/* -----------------------------------INICIO ESTILOS SECCION SKILL-------------------- */
 #skill {
   padding: 70px 30px;
 }
@@ -357,13 +355,21 @@ main {
   font-size: 15px;
   font-style: italic;
 }
+#skill .sub-para{
+  color: var(--textColor);
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  margin-top: 15px;
+
+}
+
 #skill .skill-row .skill-box .skill-outter-line {
   width: 100%;
   height: 10px;
   background-color: lightgray;
   border-radius: 15px;
 }
-
 #skill .skill-row .skill-box .skill-outter-line .skill-inner-line {
   height: 10px;
   background-color: var(--themeColor);
@@ -377,4 +383,11 @@ main {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
   }
+  #skill .sub-para{
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-align: justify;
+  }
+
 }
+/* ------------------------------------------FIN ESTILOS SECCION SKILLS-------------- */
