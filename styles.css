@@ -35,7 +35,7 @@ header .profile {
 header .profile img {
   width: 200px;
   background-color: var(--sideBGcolor);
-  
+
   /* border-radius: 0%; */
   /* border: 3px solid var(--themeColor);  */
 }
@@ -306,31 +306,75 @@ main {
     font-weight: 600;
     font-weight: 25px;
     letter-spacing: 0px;
-}
-#sobremi .about-col .info-col p {
-   font-size: 14px;
-  letter-spacing: 0px;
+  }
+  #sobremi .about-col .info-col p {
+    font-size: 14px;
+    letter-spacing: 0px;
   }
   #sobremi .about-col .info-col .icon-list-col {
     flex-direction: column;
     gap: 0px;
-}
-#sobremi .about-col .info-col .icon-list-col .icon-list ul li {
+  }
+  #sobremi .about-col .info-col .icon-list-col .icon-list ul li {
     margin: 10px 0;
-}
-#sobremi .about-col .info-col .icon-list-col .icon-list ul li strong {
+  }
+  #sobremi .about-col .info-col .icon-list-col .icon-list ul li strong {
     font-weight: 500;
     margin-right: 0px;
+  }
+  #sobremi .about-col .info-col .icon-list-col .icon-list ul li span {
+    font-weight: 400;
+    font-size: 13px;
+  }
 }
-#sobremi .about-col .info-col .icon-list-col .icon-list ul li span {
-  font-weight: 400;
-  font-size: 13px;
-}
-}
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
   #sobremi .about-col .img-col img {
     width: 90%;
   }
-
 }
 
+/*  SECCION SKILL */
+
+#skill {
+  padding: 70px 30px;
+}
+#skill .skill-row {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+#skill .skill-row .skill-box .skill-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+#skill .skill-row .skill-box .skill-info h2 {
+  color: var(--sideBGcolor);
+  font-weight: 600;
+  font-size: 15px;
+  font-style: italic;
+}
+#skill .skill-row .skill-box .skill-outter-line {
+  width: 100%;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+
+#skill .skill-row .skill-box .skill-outter-line .skill-inner-line {
+  height: 10px;
+  background-color: var(--themeColor);
+  border-radius: 20px;
+}
+@media only screen and (max-width: 450px) {
+  #skill {
+    padding: 70px 30px;
+  }
+  #skill .skill-row {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}
