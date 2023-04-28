@@ -10,7 +10,7 @@
 /* VARIABLES */
 :root {
   --sideBGcolor: #040b14;
-  --themeColor: #ff5080;
+  --themeColor: #f45454;
   --iconBGColor: #2c2f3f;
   --textColor: #525252;
   --bgColor: #f7f7f7;
@@ -39,9 +39,9 @@ header .profile {
 header .profile img {
   width: 200px;
   background-color: var(--sideBGcolor);
-
-  /* border-radius: 0%; */
-  /* border: 3px solid var(--themeColor);  */
+  
+  /* border-radius: 50%;
+  border: 3px solid var(--themeColor);  */
 }
 
 header .profile h1 {
@@ -390,7 +390,7 @@ main {
 
 /* --------------------------------------- FIN ESTILOS SECCION SOBREMI---------------- */
 
-/* -----------------------------------INICIO ESTILOS SECCION SKILL-------------------- */
+/* ----------------------------------------INICIO ESTILOS SECCION SKILL--------------- */
 #skill {
   padding: 70px 30px;
 }
@@ -458,7 +458,7 @@ main {
 
 /* ------------------------------------------FIN ESTILOS SECCION SKILLS-------------- */
 
-/* ------------------------------------------INICIO SECCION RESUMEN */
+/* ------------------------------------------INICIO SECCION RESUMEN------------------ */
 
 #resume{
   padding: 70px 30px;
@@ -619,4 +619,112 @@ main {
 }
 }
 
-/* -------------------------------------- FIN SECCION RESUMEN  */
+/* -------------------------------------- FIN SECCION RESUMEN---------------------------  */
+
+/* ---------------------------------------INICIO SECCION PROTAFOLIO---------------------- */
+
+#portfolio{
+  padding: 70px 30px;
+}
+#portfolio .sub-para {
+  color: var(--textColor);
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+#portfolio .port-row{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 35px;
+}
+#portfolio .port-row .port-item{
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#portfolio .port-row .port-item .port-img img{
+  width: 100%;
+  border-radius: 10px;
+
+}
+#portfolio .port-row .port-item .port-info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--themeColor);
+  padding: 0 15px;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transform: scale(0);
+  transition: 0.4s;
+  border-radius: 10px;
+  visibility: hidden;
+
+}
+#portfolio .port-row .port-item:hover .port-info{
+  transform: scale(1);
+  visibility: visible; 
+}
+
+#portfolio .port-row .port-item .port-info h4{
+  color: var(--bgColor);
+  font-size: 25px;
+  font-weight: 600;
+
+}
+
+#portfolio .port-row .port-item .port-info h4 + p{
+  color: var(--bgColor);
+  font-size: 14px ;
+
+}
+#portfolio .port-row .port-item .port-info a{
+  text-decoration: none;
+  display:inline-block;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--bgColor);
+  border-radius: 50%;
+  color: var(--themeColor);
+  line-height: 46px;
+  transition: 0.4s;
+
+}
+#portfolio .port-row .port-item .port-info a:hover{
+  background-color: var(--sideBGcolor);
+  color: var(--bgColor);
+}
+@media only screen and (max-width: 650px){
+  #portfolio{
+    padding: 50px 10px;
+  }
+  #portfolio .sub-para {
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+  
+  #portfolio .port-row{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+  
+  }
+
+}
+
+
+
+
+
