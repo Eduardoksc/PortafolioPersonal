@@ -512,7 +512,7 @@ main {
   color: var(--textColor);
   font-size: 15px;
   /* font-weight: 600; */
-  font-style: italic;
+  /* font-style: italic; */
   margin: 10px 0;
 }
 
@@ -892,7 +892,7 @@ main {
 #contact .contact-row .contact-rigth form textarea:focus{
   border: 2px solid var(--themeColor);
 }
-#contact .contact-row .contact-rigth form input[type="submit"]{
+#contact .contact-row .contact-rigth form input[type=submit]{
   background-color: var(--themeColor);
   color: var(--bgColor);
   border: 2px solid var(--themeColor);
