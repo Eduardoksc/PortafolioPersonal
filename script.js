@@ -41,7 +41,7 @@ window.addEventListener('scroll', function () {
 });
 
 
-// Limpiar el formulario despues de enviado el mesaje 
+// Limpiar el formulario despues de enviado el mensaje 
 
 const form = document.querySelector('form');
 
