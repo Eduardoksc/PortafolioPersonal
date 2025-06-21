@@ -3,4 +3,11 @@
 ## Objetivo del proyecto 
 Crear mi portafolio de Programador que incluye conocimientos en HTML CSS JAVASCRIPT Diseño Web 
 
+## Contenido de la Pagina 
+La pagina tiene 5 sessiones:
+Inicio
+Sobre mi
+Portafolio 
+Servicios 
+Contacto 
 
